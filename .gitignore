@@ -1,0 +1,28 @@
+# Node / Frontend
+AI_Research_Assistant-frontend/node_modules/
+AI_Research_Assistant-frontend/dist/
+AI_Research_Assistant-frontend/.env*
+
+# Python / Backend
+AI_Research_Assistant-backend/venv/
+AI_Research_Assistant-backend/.env
+AI_Research_Assistant-backend/*.db
+AI_Research_Assistant-backend/*.sqlite3
+AI_Research_Assistant-backend/uploads/*
+!AI_Research_Assistant-backend/uploads/.gitkeep
+AI_Research_Assistant-backend/reports/*
+!AI_Research_Assistant-backend/reports/.gitkeep
+AI_Research_Assistant-backend/chroma_db/*
+!AI_Research_Assistant-backend/chroma_db/.gitkeep
+AI_Research_Assistant-backend/logs/*
+!AI_Research_Assistant-backend/logs/.gitkeep
+AI_Research_Assistant-backend/__pycache__/
+AI_Research_Assistant-backend/**/*.py[cod]
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
