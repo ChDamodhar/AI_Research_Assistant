@@ -27,7 +27,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY AI_Research_Assistant-backend/ ./
 
 # Copy built frontend assets to the directory expected by the backend static router
-COPY --from=frontend-builder /app/AI_Research_Assistant-frontend/dist /app/AI_Research_Assistant-frontend/dist
+COPY --from=frontend-builder /app/frontend/dist /app/AI_Research_Assistant-frontend/dist
 
 # Expose port (default for Hugging Face Spaces or custom Docker runner)
 EXPOSE 7860
