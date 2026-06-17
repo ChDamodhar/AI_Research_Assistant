@@ -1,0 +1,6 @@
+{
+  "name": "Insight AI",
+  "description": "Enterprise Academic Manuscript Reader & Research Synthesis Dashboard",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
