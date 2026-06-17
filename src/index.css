@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-teal: #006a61;
+  --color-brand-teal-light: #86f2e4;
+  --color-brand-cyan-dark: #006f66;
+  --color-brand-slate: #0b1c30;
+  --color-brand-slate-light: #131b2e;
+  --color-bg-paper: #f8f9ff;
+}
+
+/* Custom scrollbars and styling utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Touch targeting size helpers */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Card custom subtle academic borders */
+.academic-border {
+  border-left: 4px solid var(--color-brand-teal);
+}
+
