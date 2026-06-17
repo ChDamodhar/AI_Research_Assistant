@@ -144,8 +144,12 @@ All endpoints (except `/api/auth/register` and `/api/auth/login`) require a **Be
 
     # Detect frontend build directories
     possible_dirs = [
+        # Local development layouts
         os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend/dist")),
         os.path.abspath(os.path.join(os.path.dirname(__file__), "../../AI_Research_Assistant-frontend/dist")),
+        # Docker container layouts (where backend source is copied directly to /app)
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "../frontend/dist")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "../AI_Research_Assistant-frontend/dist")),
         os.path.abspath(os.path.join(os.path.dirname(__file__), "../static")),
     ]
     
